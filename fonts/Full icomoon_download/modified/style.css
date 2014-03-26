@@ -1,0 +1,114 @@
+@font-face {
+	font-family: 'icons_refresh';
+	src:url('fonts/icons_refresh.eot');
+	src:url('fonts/icons_refresh.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icons_refresh.woff') format('woff'),
+		url('fonts/icons_refresh.ttf') format('truetype'),
+		url('fonts/icons_refresh.svg#icons_refresh') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icons_refresh';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-LOGO-Font, .icon-facebook, .icon-google-plus, .icon-twitter, .icon-feed, .icon-vimeo, .icon-wordpress, .icon-pinterest, .icon-mail, .icon-user, .icon-bubbles, .icon-arrow-right, .icon-linkedin, .icon-warning, .icon-file, .icon-printer, .icon-file-pdf, .icon-music, .icon-question, .icon-cross, .icon-ICON-arrows-down, .icon-ICON-arrows-left, .icon-ICON-arrows-right, .icon-ICON-arrows-up, .icon-UX-logomark-small {
+	font-family: 'icons_refresh';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-LOGO-Font:before {
+	content: "\52";
+}
+.icon-facebook:before {
+	content: "\21";
+}
+.icon-google-plus:before {
+	content: "\22";
+}
+.icon-twitter:before {
+	content: "\23";
+}
+.icon-feed:before {
+	content: "\24";
+}
+.icon-vimeo:before {
+	content: "\26";
+}
+.icon-wordpress:before {
+	content: "\27";
+}
+.icon-pinterest:before {
+	content: "\28";
+}
+.icon-mail:before {
+	content: "\29";
+}
+.icon-user:before {
+	content: "\2a";
+}
+.icon-bubbles:before {
+	content: "\2b";
+}
+.icon-arrow-right:before {
+	content: "\25";
+}
+.icon-linkedin:before {
+	content: "\2c";
+}
+.icon-warning:before {
+	content: "\61";
+}
+.icon-file:before {
+	content: "\74";
+}
+.icon-printer:before {
+	content: "\50";
+}
+.icon-file-pdf:before {
+	content: "\41";
+}
+.icon-music:before {
+	content: "\2d";
+}
+.icon-question:before {
+	content: "\71";
+}
+.icon-cross:before {
+	content: "\78";
+}
+.icon-ICON-arrows-down:before {
+	content: "\31";
+}
+.icon-ICON-arrows-left:before {
+	content: "\32";
+}
+.icon-ICON-arrows-right:before {
+	content: "\33";
+}
+.icon-ICON-arrows-up:before {
+	content: "\34";
+}
+.icon-UX-logomark-small:before {
+	content: "\55";
+}
