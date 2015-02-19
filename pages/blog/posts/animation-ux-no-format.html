@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Animation and the User Experience | Mark DiSciullo</title>
+
+<link rel='stylesheet' id='avada-child-stylesheet-css'  href='http://www.tandemseven.com/wp-content/themes/Avada/style.css?ver=4.0.1' type='text/css' media='all' />
+<style>
+
+body {
+    font-size: 1em;
+    margin: 2em;
+}
+
+
+
+img {
+    padding: 0px;
+    margin: 0px;
+}
+
+figcaption {
+    color: #BBB8B8;
+    font-size: 0.85em;
+    line-height: 1.25;
+    margin: 10px 0px 50px 0px;
+}
+
+
+</style>
+
+</head>
+<body>
+    <div>
+      <article>
+        <h2>Animation and the User Experience</h2>
+        <h3>by <a href="#">Mark DiSciullo</a></h3>
+
+            <p><em>“We're no longer just designing static screens. We're designing for how the user gets from those screens to actually view content”.- ZURB Foundation</em> </p>
+            <h3>Animation and UX, strange bedfellows.</h3>
+            <p>In the past, animation and UX have never really been on good terms with each other. Many of us still recall the dark ages of animation on the web. Obscure navigation interactions, annoying banner ads, Flash intros (remember the “skip intro" button?), and the infamous &#60;BLINK&#62; tag were all the rage.</p>
+            <p>Today, huge advancements in technology and a more thoughtful approach to human centered design, have sparked a renewed interest in the use of animation to improve the user experience. </p>
+
+            <h3>Why Animation…now?</h3>
+            <p>With the increase in native applications, robust motion UI frameworks and an ever increasing browser support for 2D and 3D transforms in CSS, now is the time to consider leveraging what motion can add to the user experience. Done right, animation can improve the user experience. It can influence behavior, communicate status, guide the users attention, add affordances, and help the user see the results of their actions.</p>
+            <p>Animation also can have very practical purposes too. It can make the experience feel faster by convincing users that things are loading when in fact they might not be yet. Animation can be used in replacement of an annoying spinning loading indicators (which basically just reminds reminds the user that they are waiting). A well planned "Skeleton Screen" animation will put the focus on the progress, not the indicator. <a href="http://www.lukew.com/">Luke Wroblewski</a> goes into detail about <a href="http://youtu.be/Rehw8L5Cl8M?list=PLg-UKERBljNy2Yem3RJkYL1V70dpzkysC">Skeleton Screens</a> and other useful techniques to <a href="http://youtu.be/biXNASoSK9s?list=PLg-UKERBljNy2Yem3RJkYL1V70dpzkysC">make an application feel faster</a> through the use of animation.</p>
+            <p>
+                <figure>
+                <img src="img/compare-skeleton-loading-screens.gif" alt="skeleton screens for faster feeling applications">
+                <figcaption>Use skeleton screens to make applications feel faster loading content. Skeleton screen animation based off Luke Wroblewski video <a href="http://youtu.be/Rehw8L5Cl8M?list=PLg-UKERBljNy2Yem3RJkYL1V70dpzkysC">"How to Avoid Loading Indicators"</a>
+                </figcaption>
+                </figure>
+            </p>
+
+            <h3>The Principles of Animation</h3>
+            <p>To animate is “to bring to life”. By breathing additional life into our designs through the use of animation, we can add meaning and function to the experience. Apple's <a href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/Animation.html">iOS Human Interface Guidelines</a> state that when animation is done well it can:</p>
+            <p>
+            <ul>
+              <li>Communicate status and providing feedback</li>
+              <li>Enhance the sense of direct manipulation</li>
+              <li>Help people visualize the results of their actions</li>
+            </ul>
+            </p>
+            <p>There are a few basic concepts that one must understand in order to make animation feel convincing. Two Disney animators, Frank Thomas and Ollie Johnston wrote an amazing book called “<a href="" http://www.amazon.com/Illusion-Life-Disney-Animation/dp/0786860707/ref="sr_1_2?ie=UTF8&qid=1424288421&sr=8-2&keywords=The+Illusion+of+Life">The Illusion of Life</a>”. Within this book they define the “12 Principles of Animation”. These principles show us the subtleties that make the difference between a very mechanical movement and one that feels real and authentic. What’s amazing is these fundamental principles, which were originally intended for animating characters for film, are applicable for properly animating objects within the digital user experience.  </p>
+
+
+        <p>
+            <figure>
+            <iframe src="//player.vimeo.com/video/93206523" width="500" height="198" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <figcaption>This brilliant video from <a href="http://www.centolodigiani.com/">Cento Lodigiani</a> provides an overview of the 12 animation principles outlined in the book “The Illusion of Life".</figcaption>
+            </figure>
+        </p>
+
+
+<p>Walt Disney and team spend a lifetime expressing how the most minute detail of motion should be analyzed and understood in order to make a movement feel believable. Objects in the real world have mass and weight. These objects also must follow the laws of physics in regards to inertia, speed, bounce or velocity. People can easily tell the difference between mechanical movement and something that mimics the behavior in the real world. Animation that lacks this attention to detail, detracts from the overall user experience and makes the UI feel amaturish, rigid and janky.</p>
+<p>
+            <figure>
+            <img src="img/principles-compare-easing.gif" alt="Comparing easing">
+            <figcaption><strong>Slow In and Out: </strong>Often referred to as “easing” in the digital world (ease-in, ease-out), this is how to make objects appear to follow the laws of inertia. It’s nearly impossible for an object to move at a constant rate of speed from start to finish and them abruptly come to a stop. </figcaption>
+            </figure>
+</p>
+
+
+<h3>How to Animate a UI like a pro</h3>
+<p>Within a digital user experience, motion should provide meaning and should not break the continuity of the experience. Even as objects transform and reorganize on the screen there should always be a seamless, natural flow. Sometimes of the most meaningful motions are the most subtile. In other words, animation should be felt, not seen.</p>
+<p>
+            <figure>
+            <img src="img/iwatch-user-interface.gif" alt="iWatch Concept">
+            <figcaption>As objects transform and reorganize on the screen, there should always be a seamless, natural flow. iWatch application concept by TandemSeven Principle Experience Architect <a href="www.markdisciullo.com">Mark Di Sciullo</a></figcaption>
+            </figure>
+</p>
+
+<p>Google’s <a href="http://www.google.com/design/spec/animation/authentic-motion.html">Material Design guidelines</a> do a great job of explaining the role animation can play in context of a digital user experience.</p>
+
+<p>
+  <ul>
+    <li><strong>The motion of a UI element should always feel authentic</strong> - Accelerate objects swiftly and decelerate them slowly to avoid abrupt changes in velocity. Physical objects have mass and move only when forces are applied to them. Consequently, objects can’t start or stop instantaneously.</li>
+    <li><strong>Animations should be used to provide feedback</strong> - Buttons and objects on the screen should respond to the users input to build confidence that the application is responding. Responsive interaction elevates an app from something that delivers information to the user upon request to something that communicates with the user in a tangible way. It also encourages deeper exploration of an app.</li>
+    <li><strong>Transitions should be meaningful</strong> - A well-designed transition enables the user to clearly understand where their attention should be focused. Think about how the user’s attention should be directed. Be discerning about the animation you decide to add: consider how moving a certain element adds clarity and delight to a transition. Just as important, consider if the motion is just plain distracting, if so, remove it.</li>
+    <li><strong>Attend to the details</strong> - Users do notice the details. Attention to fine movements can delightfully surprise the user, increase a brand perception,convey an emotion, and create a sense of superb craftsmanship.</li>
+  </ul>
+            <figure>
+            <img src="img/authentic-motion-ui-example.gif" alt="authentic motion for UX">
+            <figcaption>Things don’t come to a stop all at once in reality. Allow objects to drift past it's intended target to provide more vitality to the experience. UI Design and Animation by <a href="www.markdisciullo.com">Mark Di Sciullo</a>.</figcaption>
+            </figure>
+</p>
+
+
+<h3>Integrating Animation into your UX Design Workflow</h3>
+<p>The best place to start with animation is to sketch out a simple storyboard of the motion. This can be on paper, on a whiteboard or in an app such as Sketchbook Pro. This is typically done in conjunction with other design activities such as while creating wireframes. A storyboard used in conjunction with a set of annotated wireframes will help explain the motion to a client and how it will be incorporated into the over all UI experience design.</p>
+
+<p>
+            <figure>
+            <img src="img/ui-animation-storyboards.png" alt="ui animation storyboard">
+            <figcaption>Simple storyboard sketches are a great way to start the animation process.</figcaption>
+            </figure>
+
+</p>
+
+<p>Prototyping is the absolute best way to convey how you intend to use motion in your design. Tools such as <a href="http://www.invisionapp.com/">Invision</a> and <a href="http://blog.uxpin.com/5186/new-uxpin-advanced-interactions/">UXPin</a> include built in collections of basic transitions and movements. Prototypes created in <a href="http://markgeyer.com/pres/interface-animations/#/">Axure</a> can also simulate motion through the creative use of the “Wait Time (ms)” action in conjunction with the wide range of included events (OnClick, OnPageLoad, OnMouseEnter, OnDrag, OnSwipeRight, etc). </p>
+<p>For more robust animation prototyping, the <a href="http://foundation.zurb.com/apps/">Foundation for Apps</a> framework from <a href="http://www.zurb.com">ZURB</a> includes a <a href="http://foundation.zurb.com/apps/docs/#!/motion-ui">Motion UI</a> library for rapidly prototyping UI motion in a more realistic and responsive development environment. Also, another great place to get started animating UI components with CSS and Javascript is at <a href="http://www.CodePen.io">CodePen.io</a>. There are <a href="http://codepen.io/search?q=animation">plenty of UI animation samples </a>that you can play around with, copy and fork and use in your own projects. It’s a great place to poke around and get inspired while learning some code. </p>
+<p>When creating high fidelity compositions, tools such as <a href="http://www.adobe.com/products/photoshop.html">Adobe Photoshop</a>, <a href="http://www.adobe.com/products/illustrator.html">Adobe Illustrator</a>, <a href="https://affinity.serif.com/en-gb/beta-download/">Affinity Photo</a> or <a href="https://affinity.serif.com/en-gb/">Affinity Designer</a> can be used to create the initial design elements. From there, <a href="http://www.adobe.com/products/aftereffects.html">Adobe After Effects</a> can be used to animate and composite the final motion concepts. </p>
+
+<h3>The Final Frame</h3>
+<p>Animation is powerful when used in a sophisticated ways. But with great power comes great responsibilities. When deciding to use animation in your application, strive for realism and credibility. Your users can easily feel disoriented or ill when they experience motion that doesn’t make sense or appears to defy physical laws. They will be completely annoyed when it’s overused. Use it only when it will have meaning and will not distract the user from successfully complete what they intended to do. Animation that seems excessive will obstruct app flow, decrease performance, and distract users from their task. </p>
+
+<h5>Additional references and examples:</h5>
+
+<p>
+    <ul>
+        <li>
+<strong>Interface Animation Workshop</strong> - Mark Geyer<br>
+<a href="http://markgeyer.com/pres/interface-animations/#/">http://markgeyer.com/pres/interface-animations/#/</a>
+        </li>
+        <li>
+<strong>Animation for Attention and Comprehension</strong> - Neilsen Norman Group<br>
+<a href="http://www.nngroup.com/articles/animation-usability/">http://www.nngroup.com/articles/animation-usability/</a>
+        </li>
+        <li>
+<strong>UI Animation and UX: A Not-So-Secret Friendship</strong> - Val Head, A List Apart<br>
+<a href="http://alistapart.com/article/ui-animation-and-ux-a-not-so-secret-friendship">http://alistapart.com/article/ui-animation-and-ux-a-not-so-secret-friendship</a>
+        </li>
+        <li>
+<strong>Smart Transitions</strong> - Smashing Magazine<br>
+<a href="http://www.smashingmagazine.com/2013/10/23/smart-transitions-in-user-experience-design/">http://www.smashingmagazine.com/2013/10/23/smart-transitions-in-user-experience-design/</a>
+        </li>
+        <li>
+<strong>12 Principles of Animation Examples</strong> - Cento Lodigiani<br>
+<a href="http://the12principles.tumblr.com">http://the12principles.tumblr.com</a>
+</li>
+<li>
+<strong>How to Avoid Loading Indicators</strong>- Luke Wroblewski<br>
+<a href="http://youtu.be/Rehw8L5Cl8M?list=PLg-UKERBljNy2Yem3RJkYL1V70dpzkysC" http://youtu.be/Rehw8L5Cl8M?list="PLg-UKERBljNy2Yem3RJkYL1V70dpzkysC">http://youtu.be/Rehw8L5Cl8M?list=PLg-UKERBljNy2Yem3RJkYL1V70dpzkysC</a>
+</li>
+<li>
+<strong>How to make Apps Feel Faster</strong> - Luke Wroblewski<br>
+<a href="http://youtu.be/biXNASoSK9s?list=PLg-UKERBljNy2Yem3RJkYL1V70dpzkysC" http://youtu.be/Rehw8L5Cl8M?list="PLg-UKERBljNy2Yem3RJkYL1V70dpzkysC">http://youtu.be/biXNASoSK9s?list=PLg-UKERBljNy2Yem3RJkYL1V70dpzkysC</a>
+</li>
+    </ul>
+
+
+</p>
+
+      </article>
+
+
+    </div>
+
+  </body>
+</html>
